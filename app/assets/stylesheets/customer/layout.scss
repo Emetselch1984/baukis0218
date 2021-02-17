@@ -1,0 +1,45 @@
+@import "colors";
+@import "dimensions";
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+div#wrapper{
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-bottom: ($wide + $moderate) * 2 + $standard_line_height;
+  background-color: $gray;
+  div#container{
+    h1{
+      font-size: $large;
+      font-weight: normal;
+      background-color: #1a3333;
+      color: $light_gray;
+      margin: 0;
+      padding: $moderate * 1.5 $moderate;
+    }
+  }
+}
+header{
+  padding: $moderate;
+  background-color: $dark_cyan;
+  color: $light_gray;
+  span.logo-mark{
+    font-weight: bold;
+  }
+}
+footer{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: $dark_gray;
+  color: $light_gray;
+  p{
+    text-align: right;
+    margin: 0;
+    padding: $moderate;
+  }
+}
