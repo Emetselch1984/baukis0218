@@ -1,3 +1,5 @@
 class Staff::TopController < ApplicationController
-  def index; end
+  def index
+    raise Forbidden
+  end
 end

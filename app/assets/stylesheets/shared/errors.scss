@@ -1,0 +1,13 @@
+$gray: #666666;
+$light_gray: #fafafa;
+
+div#error{
+  border-radius: 10px;
+  border: solid 4px $gray;
+  background-color: $light_gray;
+  text-align: center;
+  p.url {font-family: monospace}
+  padding: 20px;
+  margin: 20px auto;
+  width: 600px;
+}
