@@ -1,7 +1,7 @@
 /* グレー系 */
 
 $dark_gray: #666666;
-$gray: #cccccc;
+$light_gray1: #cccccc;
 $light_gray: #eeeeee;
 $very_light_gray: #fafafa;
 
@@ -13,6 +13,11 @@ $very_dark_cyan: darken($dark_cyan, 25%);
 /* 赤系 */
 $red: #cc0000;
 $pink: #ffcccc;
+$dark_red: #730E15;
+
 
 /* 緑系 */
 $green: #00cc00;
+
+$dark_magenta: #884488;
+$very_dark_magenta: darken($dark_magenta, 25%);
