@@ -12,16 +12,23 @@ class Staff::SessionsController < Staff::Base
     if @form.email.present?
       staff_member = StaffMember.find_by("LOWER(email)=?",@form.email.downcase)
     end
-
-    if staff_member
-      session[:staff_member_id] = staff_member.id
-      redirect_to :staff_root
+    if Staff::Authenticator.new(staff_member).authenticate(@form.password)
+      if staff_member.suspended?
+        flash.alert = "アカウントが停止されています"
+        render :new
+      else
+        session[:staff_member_id] = staff_member.id
+        flash.notice = "ログインしました"
+        redirect_to :staff_root
+      end
     else
+      flash.alert = "メールアドレス、またはパスワードが正しくありません。"
       render :new
     end
   end
   def destroy
     session.delete(:staff_member_id)
+    flash.alert = "ログアウトしました"
     redirect_to :staff_root
   end
   private def login_form_params

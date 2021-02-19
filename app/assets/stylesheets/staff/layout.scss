@@ -13,6 +13,36 @@ div#wrapper{
   padding-bottom: ($wide + $moderate) * 2 + $standard_line_height;
   background-color: $gray;
   div#container{
+    div#login-form {
+      width: 400px;
+      padding: $wide * 2;
+      margin: $wide *  2 auto;
+      border-radius: $wide;
+      border: solid 4px $dark_cyan;
+      background-color: $very_light_gray;
+      h1 {
+        background-color: transparent;
+        color: $dark_gray;
+        font-size: $huge;
+        font-weight: bold;
+      }
+      form {
+        div {
+          padding: $wide;
+          label{
+            display: block;
+            padding: $moderate 0;
+          }
+          input[type="text"],input[type="password"]{
+            padding: $wide;
+            width: 360px;
+          }
+          input[type="submit"]{
+            padding: $narrow $moderate;
+          }
+        }
+      }
+    }
     h1{
       font-size: $large;
       font-weight: normal;
