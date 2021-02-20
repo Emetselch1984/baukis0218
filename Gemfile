@@ -31,6 +31,8 @@ gem "date_validator"
 gem "valid_email2"
 gem "nokogiri"
 gem 'config', '~>2.0.0'
+gem 'bootstrap'
+gem 'jquery-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

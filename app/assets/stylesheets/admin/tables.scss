@@ -25,6 +25,6 @@ div.table-wrapper{
   table.listing{
     width: 100%;
     tr:nth-child(even){background-color: $very_light_gray}
-    tr:nth-child(odd){background-color: $light_gray}
+    tr:nth-child(odd){background-color: $gray_a}
   }
 }
