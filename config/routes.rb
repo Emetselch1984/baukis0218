@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     post "session",to:"sessions#create", as: :session
     delete "session",to:"sessions#destroy"
     resource :account
+    resources :profile
   end
   namespace :admin do
     root'top#index'

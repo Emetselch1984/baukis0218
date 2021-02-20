@@ -10,7 +10,7 @@ div#wrapper{
   min-height: 100%;
   margin: 0 auto;
   padding-bottom: ($wide + $moderate) * 2 + $standard_line_height;
-  background-color: $gray;
+  background-color: $light_gray1;
   div#container{
     div#login-form {
       width: 400px;
@@ -75,4 +75,95 @@ footer{
     margin: 0;
     padding: $moderate;
   }
+}
+.profile-page{
+  .card-profile-image {
+    position: relative;
+    //min-height: 130px;
+    img {
+      max-width: 180px;
+      border-radius: .25rem;
+      @extend .shadow;
+      transform: translate(-50%, -30%);
+      position: absolute;
+      left: 50%;
+      transition: $transition-base;
+
+      &:hover {
+        transform: translate(-50%, -33%);
+      }
+    }
+  }
+  .card-profile-stats {
+    padding: 1rem 0;
+
+    > div {
+      text-align: center;
+      margin-right: 1rem;
+      padding: .875rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .heading {
+        font-size: 1.1rem;
+        font-weight: bold;
+        display: block;
+      }
+      .description {
+        font-size: .875rem;
+        color: $gray-500;
+      }
+    }
+  }
+
+}
+.mt--300 {
+  margin-top: -300px !important;
+}
+.btn-default {
+  color: #fff;
+  background-color: #0b1526;
+  border-color: #08101c;
+}
+.heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+}
+
+.description {
+  font-size: .875rem;
+  color: #adb5bd;
+}
+
+.ni{
+  color: #999999;
+  font-weight: 300;
+}
+.profile-color{
+  background-color: $very_light_gray;
+}
+.section-profile-cover {
+  height: 580px;
+  background-size: cover;
+  background-position: center center;
+  .img{
+    width: 100%;
+  }
+}
+.section-shaped {
+  position: relative;
+  overflow: hidden;
+}
+
+.order-1{
+  order: 1;
+}
+.order-2{
+  order: 2;
+}
+.order-3{
+  order: 3;
 }
