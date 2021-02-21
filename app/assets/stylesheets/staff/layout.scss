@@ -76,7 +76,86 @@ footer{
     padding: $moderate;
   }
 }
-
+.section-profile-cover{
+  height: 580px;
+  background-size: cover;
+  background-position: center center;
+  img {
+    width: 100%;
+  }
+}
+.section-shaped{
+  position: relative;
+  overflow: hidden;
+}
+.section-profile{
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: $very_light_gray;
+}
+.mt--150{
+  margin-top: -150px;
+}
+.mt--300{
+  margin-top: -300px;
+}
+.mt--450{
+  margin-top: -450px;
+}
+.card-profile-image{
+  position: relative;
+  img{
+    max-width: 180px;
+    border-radius: .25rem;
+    @extend .shadow;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-33%);
+    transition: $transition-base;
+    &:hover{
+      transform: translate(-50%,-83%);
+    }
+  }
+}
+.heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+}
+.description {
+  font-size: .875rem;
+  color: #adb5bd;
+}
+.card-profile-stats{
+  padding: 1rem 0;
+  div{
+    text-align: center;
+    padding: 0.875rem;
+    margin-right: 1rem;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+.btn-default {
+  color: #fff;
+  background-color: #0b1526;
+  bordier-color: #08101c;
+}
+.btn-fs{
+  font-size: 0.75rem;
+}
+section#profile-page{
+  .item{
+    padding: .875rem;
+  }
+  @media (max-width: 575.98px) {
+    .item {
+      margin-top: 110px;
+    }
+  }
+}
 //.section-profile{
 //  position: relative;
 //  padding-top: 4rem;
