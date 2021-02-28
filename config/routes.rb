@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     post "session",to:"sessions#create", as: :session
     delete "session",to:"sessions#destroy"
     resources :staff_members
+    resources :profile
   end
   namespace :customer do
     root'top#index'
