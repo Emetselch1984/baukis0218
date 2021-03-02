@@ -1,5 +1,3 @@
 class Staff::ProfileController < Staff::Base
-  def index
-
-  end
+  def index ;end
 end

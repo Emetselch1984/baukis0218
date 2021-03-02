@@ -18,8 +18,19 @@ class Admin::StaffMembersController < Admin::Base
       render :new
     end
   end
+  def edit
+    @staff_member = StaffMember.find(params[:id])
+  end
   def update
     @staff_member = StaffMember.find(params[:id])
+    @staff_member.assign_attributes(staff_member_params)
+    if @staff_member.save
+      flash.notice ="職員情報を更新しました"
+      redirect_to :admin_staff_members
+    else
+      render :edit
+    end
+
 
   end
   private
