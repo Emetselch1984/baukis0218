@@ -1,4 +1,19 @@
-
+section#d-flex{
+  .item{
+    background-color: unset;
+    margin-bottom: 0.5rem;
+  }
+  div{
+    background-color: #448888;
+    margin: .5rem 0;
+    border: white solid 1px;
+  }
+  section#box{
+    height: 200px;
+    width: 100%;
+    background-color: #999999;
+  }
+}
 //.section-profile-cover{
 //  height: 580px;
 //  background-size: cover;
